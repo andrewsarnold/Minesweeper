@@ -395,7 +395,7 @@ public class MainWindowController implements Initializable
 	private void SetFace(String image)
 	{
 		InputStream is = MainWindowController.class.getResourceAsStream(image);
-		Image i = new Image(is);//, 19, 19, false, true);
+		Image i = new Image(is);
 		face.setImage(i);
 	}
 }
