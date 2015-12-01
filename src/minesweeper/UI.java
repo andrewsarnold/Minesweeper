@@ -32,7 +32,7 @@ public class UI extends Application
 
 		VBox root = loader.load();
 		Scene scene = new Scene(root);
-		stage.getIcons().add(new Image("minesweeper/images/mine.ico"));
+		stage.getIcons().add(new Image("minesweeper/images/mine.png"));
 		stage.setResizable(false);
 		stage.setScene(scene);
 		stage.show();
