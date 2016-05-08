@@ -356,6 +356,7 @@ public class MainWindowController implements Initializable
 		_playing = false;
 		
 		Alert alert = new Alert(AlertType.NONE);
+		((Stage)alert.getDialogPane().getScene().getWindow()).getIcons().add(new Image("minesweeper/images/mine.png"));
 		alert.setGraphic(GetImage(imageName, 64));
 		alert.getButtonTypes().clear();
 		alert.getButtonTypes().addAll(
