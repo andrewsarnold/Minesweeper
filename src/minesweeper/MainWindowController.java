@@ -33,6 +33,7 @@ import javafx.scene.layout.CornerRadii;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
+import javafx.scene.paint.Paint;
 import javafx.stage.Stage;
 
 public class MainWindowController implements Initializable
@@ -170,7 +171,11 @@ public class MainWindowController implements Initializable
 	
 	private void RightClick(Button b)
 	{
-		ToggleFlag(b);
+		Paint currentBackground = b.getBackground().getFills().get(0).getFill();
+		if (currentBackground instanceof Color && !((Color)currentBackground).equals(Color.WHITE))
+		{
+			ToggleFlag(b);
+		}
 	}
 	
 	private void LeftClick(Button b, int x, int y)
